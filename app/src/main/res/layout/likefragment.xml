@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView android:id="@+id/wish_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Wish Title"
+        android:gravity="center"
+        android:textSize="20dip"
+        android:textColor="@color/darkeBlue"
+        android:textStyle="bold" />
+
+    <TextView android:id="@+id/wish_details"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:text="I wish to "
+        android:gravity="center"
+        android:textSize="16dip"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView android:id="@+id/tags"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Tags: Books "
+            android:gravity="center"
+            android:textSize="16dip"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <TextView android:id="@+id/dates"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="30-11-2017"
+            android:textSize="16dip"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView android:id="@+id/likes"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="20 Likes "
+            android:gravity="center"
+            android:textSize="16dip"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <TextView android:id="@+id/helps"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="40 Helps "
+            android:textSize="16dip"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+
+        >
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab1"
+        android:layout_width="40dp"
+        android:layout_weight="1"
+        android:src="@drawable/help"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+
+        android:layout_margin="@dimen/fab_margin" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab2"
+        android:layout_width="40dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:src="@drawable/like"
+        android:layout_margin="@dimen/fab_margin" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
